@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "SEExtensions"
-  spec.version      = "1.0.0"
+  spec.version      = "0.0.1"
   spec.summary      = "Swift扩展"
   spec.description  = "Swift扩展"
 
