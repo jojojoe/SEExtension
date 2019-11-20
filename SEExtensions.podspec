@@ -24,7 +24,7 @@ Pod::Spec.new do |spec|
 
   spec.source           = { :git => "https://github.com/jojojoe/SEExtension.git", :tag => "#{spec.version}" }
   spec.source_files     = "SEExtensions/**/*.{h,m,swift,xib}"
-  spec.resource_bundles = { 'SEExtensions' => ['SEExtensions/SEExtensions.bundle/*.png'] }
+  #spec.resource_bundles = { 'SEExtensions' => ['SEExtensions/SEExtensions.bundle/*.png'] }
   spec.frameworks       = 'UIKit', 'Photos', 'PhotosUI','Foundation'
   spec.dependency 'Kingfisher'
   spec.dependency 'SwifterSwift'
