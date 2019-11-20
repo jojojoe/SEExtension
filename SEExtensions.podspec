@@ -11,7 +11,9 @@ Pod::Spec.new do |spec|
   spec.name         = "SEExtensions"
   spec.version      = "0.0.1"
   spec.summary      = "扩展"
-  spec.description  = "Swift扩展"
+  spec.description  = <<-DESC
+                   swift extensions
+                   DESC
 
   spec.homepage         = "https://github.com/jojojoe/SEExtension"
   spec.license          = { :type => "MIT", :file => "LICENSE" }
@@ -19,8 +21,8 @@ Pod::Spec.new do |spec|
   spec.social_media_url = "https://baidu.com"
   spec.swift_version    = '5.0'
 
-  spec.platform              = :ios, "9.0+"
-  spec.ios.deployment_target = "9.0"
+  spec.platform              = :ios, "13.0"
+  spec.ios.deployment_target = "13.0"
 
   spec.source           = { :git => "https://github.com/jojojoe/SEExtension.git", :tag => "#{spec.version}" }
   spec.source_files     = "SEExtensions/**/*.{h,m,swift,xib}"
