@@ -21,8 +21,8 @@ Pod::Spec.new do |spec|
   spec.social_media_url = "https://baidu.com"
   spec.swift_version    = '5.0'
 
-  spec.platform              = :ios, "13.0"
-  spec.ios.deployment_target = "13.0"
+  spec.platform              = :ios, "12.0"
+  spec.ios.deployment_target = "12.0"
 
   spec.source           = { :git => "https://github.com/jojojoe/SEExtension.git", :tag => "#{spec.version}" }
   spec.source_files     = "SEExtensions/**/*.{h,m,swift,xib}"
