@@ -80,4 +80,8 @@ public extension UIViewController {
         controller.modalTransitionStyle = .crossDissolve
         present(controller, animated: true, completion: completion)
     }
+    
+    func dismissVC() {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

@@ -24,7 +24,7 @@
 
 import Foundation
 
-extension Timer {
+public extension Timer {
     // MARK: Schedule timers
 
     /// Create and schedule a timer that will call `block` once after the specified time.
@@ -114,7 +114,7 @@ extension Timer {
 
 // MARK: - Time extensions
 
-extension Double {
+public extension Double {
     public var millisecond: TimeInterval { return self / 1000 }
     public var milliseconds: TimeInterval { return self / 1000 }
     public var ms: TimeInterval { return self / 1000 }

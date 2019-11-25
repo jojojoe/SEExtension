@@ -9,7 +9,8 @@
 import Foundation
 import SwifterSwift
 
-class LoadJsonData: NSObject {
+
+public class LoadJsonData: NSObject {
     
     public static var `default` = LoadJsonData()
     
