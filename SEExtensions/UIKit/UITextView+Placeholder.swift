@@ -47,10 +47,14 @@ extension UITextView {
                 label?.numberOfLines = 0
                 label?.font = self.font
                 label?.textColor = UIColor.lightGray
+                label?.textAlignment = self.textAlignment
                 self.addSubview(label!)
                 self.setValue(label!, forKey: "_placeholderLabel")
                 objc_setAssociatedObject(self, UITextView.RuntimeKey.hw_placeholderLabelKey!, label!, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
                 self.sendSubviewToBack(label!)
+            } else {
+                label?.font = self.font
+                label?.textColor = label?.textColor.withAlphaComponent(0.6)
             }
             return label!
         }

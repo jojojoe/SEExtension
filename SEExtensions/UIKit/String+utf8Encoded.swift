@@ -8,6 +8,7 @@
 
 import Foundation
 // MARK: - Helpers
+public
 extension String {
     var urlEscaped: String {
         return addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
@@ -17,3 +18,13 @@ extension String {
         return data(using: .utf8)!
     }
 }
+
+//extension String {
+//    func contains(find: String) -> Bool{
+//        return self.range(of: find) != nil
+//    }
+//
+//    func containsIgnoringCase(find: String) -> Bool{
+//        return self.range(of: find, options: .caseInsensitive) != nil
+//    }
+//}
