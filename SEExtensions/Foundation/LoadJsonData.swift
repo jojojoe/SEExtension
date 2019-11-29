@@ -8,7 +8,7 @@
 
 import Foundation
 import SwifterSwift
-
+ 
 
 public class LoadJsonData: NSObject {
     

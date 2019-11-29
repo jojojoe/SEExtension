@@ -24,6 +24,24 @@ public extension DeviceUtilProtocol where Self: UIDevice {
         }
     }
     
+    static func isZHLanguage() -> Bool {
+        let language: String = UIDevice.currentLanguage()
+        
+        if language.contains("zh") {
+            return true
+        }
+        return false
+    }
+    
+    static func currentLanguage() -> String {
+        
+        return NSLocale.preferredLanguages.first ?? "en"
+        
+//        [[NSLocale preferredLanguages] objectAtIndex:0])
+//
+//        // 中文语言
+//        #define DEF_CurrentLanguage_ZH [DEF_CurrentLanguage containsString:@"zh"]
+    }
     
 }
 
