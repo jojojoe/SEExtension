@@ -10,6 +10,36 @@ import Foundation
 import UIKit
 
 public extension UIView {
+    
+    @discardableResult
+    func shadow (
+        color: UIColor?,
+        radius: CGFloat? = nil,
+        opacity: Float? = nil,
+        offset: CGSize? = nil,
+        path: CGPath? = nil
+    ) -> Self {
+        layer.shadowColor = color?.cgColor
+        
+        if let radius = radius {
+            layer.shadowRadius = radius
+        }
+        
+        if let opacity = opacity {
+            layer.shadowOpacity = opacity
+        }
+        
+        if let offset = offset {
+            layer.shadowOffset = offset
+        }
+        
+        if let path = path {
+            layer.shadowPath = path
+        }
+        
+        return self
+    }
+    
     @discardableResult
     func crop() -> Self {
         contentMode()
