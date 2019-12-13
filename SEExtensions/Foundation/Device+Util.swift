@@ -24,6 +24,7 @@ public extension DeviceUtilProtocol where Self: UIDevice {
         }
     }
     
+
     static func isZHLanguage() -> Bool {
         let language: String = UIDevice.currentLanguage()
         

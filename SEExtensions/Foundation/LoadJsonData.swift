@@ -29,6 +29,22 @@ public class LoadJsonData: NSObject {
         }
         return nil
     }
+    
+    public func loadPlist<T: Codable>(_:T.Type, name:String, type:String = "plist") -> T? {
+        if let path = Bundle.main.path(forResource: name, ofType: type) {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path))
+                do {
+                    return try PropertyListDecoder().decode(T.self, from: data)
+                } catch let error as NSError {
+                    print(error)
+                }
+            } catch let error as NSError {
+                print(error)
+            }
+        }
+        return nil
+    }
 }
 
 
