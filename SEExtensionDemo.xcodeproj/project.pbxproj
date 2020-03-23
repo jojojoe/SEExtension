@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -33,6 +33,7 @@
 		EB2409D22384D3D80016AE44 /* Foundation+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2409BF2384D3D80016AE44 /* Foundation+Extension.swift */; };
 		EB2409D32384D3D80016AE44 /* Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2409C02384D3D80016AE44 /* Debug.swift */; };
 		EB2409D42384D3D80016AE44 /* Device+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2409C12384D3D80016AE44 /* Device+Util.swift */; };
+		EB27E13C2428A793001D26CA /* Font+CustomFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB27E13B2428A793001D26CA /* Font+CustomFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		EB2409BF2384D3D80016AE44 /* Foundation+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Foundation+Extension.swift"; sourceTree = "<group>"; };
 		EB2409C02384D3D80016AE44 /* Debug.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debug.swift; sourceTree = "<group>"; };
 		EB2409C12384D3D80016AE44 /* Device+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Device+Util.swift"; sourceTree = "<group>"; };
+		EB27E13B2428A793001D26CA /* Font+CustomFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+CustomFile.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +88,6 @@
 				73877D3029AA2A3AA36B5A6D /* Pods-SEExtensionDemo.debug.xcconfig */,
 				BF40A0ED6615057BB0691975 /* Pods-SEExtensionDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -162,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				EB2409BA2384D3D80016AE44 /* Once.swift */,
+				EB27E13B2428A793001D26CA /* Font+CustomFile.swift */,
 				EB2409BB2384D3D80016AE44 /* SwiftyTimer.swift */,
 				EB2409BC2384D3D80016AE44 /* LoadJsonData.swift */,
 				EB2409BD2384D3D80016AE44 /* JsonConvert.swift */,
@@ -290,6 +292,7 @@
 			files = (
 				EB2409D22384D3D80016AE44 /* Foundation+Extension.swift in Sources */,
 				EB2409C42384D3D80016AE44 /* UIImage+RoundedCorner.swift in Sources */,
+				EB27E13C2428A793001D26CA /* Font+CustomFile.swift in Sources */,
 				EB2409D02384D3D80016AE44 /* JsonConvert.swift in Sources */,
 				EB2409CF2384D3D80016AE44 /* LoadJsonData.swift in Sources */,
 				EB2409C22384D3D80016AE44 /* VC+Route.swift in Sources */,
