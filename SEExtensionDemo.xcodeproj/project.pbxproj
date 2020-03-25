@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		572A117CBECC114F8D070463 /* Pods_SEExtensionDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E5F7D6FCC30260456C8CF31 /* Pods_SEExtensionDemo.framework */; };
+		EB1EB36C242AFF9B009BEC01 /* UIView+Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1EB36B242AFF9B009BEC01 /* UIView+Corner.swift */; };
 		EB2409992384D3450016AE44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2409982384D3450016AE44 /* AppDelegate.swift */; };
 		EB24099B2384D3450016AE44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB24099A2384D3450016AE44 /* SceneDelegate.swift */; };
 		EB24099D2384D3450016AE44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB24099C2384D3450016AE44 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 		1E5F7D6FCC30260456C8CF31 /* Pods_SEExtensionDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SEExtensionDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73877D3029AA2A3AA36B5A6D /* Pods-SEExtensionDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEExtensionDemo.debug.xcconfig"; path = "Target Support Files/Pods-SEExtensionDemo/Pods-SEExtensionDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		BF40A0ED6615057BB0691975 /* Pods-SEExtensionDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SEExtensionDemo.release.xcconfig"; path = "Target Support Files/Pods-SEExtensionDemo/Pods-SEExtensionDemo.release.xcconfig"; sourceTree = "<group>"; };
+		EB1EB36B242AFF9B009BEC01 /* UIView+Corner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Corner.swift"; sourceTree = "<group>"; };
 		EB2409952384D3450016AE44 /* SEExtensionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SEExtensionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB2409982384D3450016AE44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB24099A2384D3450016AE44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				EB2409B62384D3D80016AE44 /* UIKit+Simply.swift */,
 				EB2409B72384D3D80016AE44 /* VC+ImagePicker.swift */,
 				EB2409B82384D3D80016AE44 /* UIApplication+URL.swift */,
+				EB1EB36B242AFF9B009BEC01 /* UIView+Corner.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				EB2409D42384D3D80016AE44 /* Device+Util.swift in Sources */,
 				EB2409992384D3450016AE44 /* AppDelegate.swift in Sources */,
 				EB2409CA2384D3D80016AE44 /* UIKit+Simply.swift in Sources */,
+				EB1EB36C242AFF9B009BEC01 /* UIView+Corner.swift in Sources */,
 				EB2409C32384D3D80016AE44 /* VC+Interface.swift in Sources */,
 				EB24099B2384D3450016AE44 /* SceneDelegate.swift in Sources */,
 				EB2409D32384D3D80016AE44 /* Debug.swift in Sources */,
