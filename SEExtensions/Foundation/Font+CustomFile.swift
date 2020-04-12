@@ -29,8 +29,8 @@ public extension UIFont {
             var fontError = Unmanaged<CFError>?.init(nilLiteral: ())
             CTFontManagerRegisterGraphicsFont(fontRef, &fontError)
             // ...获取了字体实际名字
-            let fontName:String =  fontRef.fullName! as String
-            
+//            let fontName:String =  fontRef.fullName! as String
+            let fontName:String =  fontRef.postScriptName! as String
             return UIFont.init(name: fontName, size: fontPoint) ?? UIFont.systemFont(ofSize: fontPoint)
             
         } else {
