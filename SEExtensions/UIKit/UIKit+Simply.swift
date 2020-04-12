@@ -175,3 +175,30 @@ extension UIButton {
         return self
     }
 }
+
+
+
+extension UIColor {
+    convenience init(red: Int, green: Int, blue: Int) {
+        self.init(red: CGFloat(red) / 255, green: CGFloat(green) / 255, blue: CGFloat(blue) / 255, alpha: 1)
+    }
+}
+
+extension Array {
+    
+    public func randomItem() -> Element {
+        let index = Int(arc4random_uniform(UInt32(self.count)))
+        return self[index]
+    }
+    
+}
+
+extension CGPoint {
+    
+    public func distance(from point: CGPoint) -> CGFloat {
+        return hypot(point.x - x, point.y - y)
+    }
+    
+}
+
+
