@@ -78,7 +78,7 @@ public extension UIView {
         tag = value
         return self
     }
-
+    
     @discardableResult
     func tintColor(_ value: UIColor) -> Self {
         tintColor = value
