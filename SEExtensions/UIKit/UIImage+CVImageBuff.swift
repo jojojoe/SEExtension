@@ -8,7 +8,7 @@
 import UIKit
 import Foundation
 extension UIImage {
-    func pixelBufferFromImage() -> CVPixelBuffer {
+    func pixelBufferFromImage1() -> CVPixelBuffer {
         
         
         let ciimage = CIImage(image: self)

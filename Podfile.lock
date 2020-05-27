@@ -3,10 +3,11 @@ PODS:
   - Kingfisher (5.10.0):
     - Kingfisher/Core (= 5.10.0)
   - Kingfisher/Core (5.10.0)
-  - SEExtensions (0.0.1):
+  - SEExtensions (0.0.2):
     - Alertift
     - Kingfisher
     - SwifterSwift
+    - ZKProgressHUD
   - SwifterSwift (5.1.0):
     - SwifterSwift/AppKit (= 5.1.0)
     - SwifterSwift/CoreGraphics (= 5.1.0)
@@ -28,6 +29,7 @@ PODS:
   - SwifterSwift/SpriteKit (5.1.0)
   - SwifterSwift/SwiftStdlib (5.1.0)
   - SwifterSwift/UIKit (5.1.0)
+  - ZKProgressHUD (5.1.1)
 
 DEPENDENCIES:
   - SEExtensions (from `./`)
@@ -37,6 +39,7 @@ SPEC REPOS:
     - Alertift
     - Kingfisher
     - SwifterSwift
+    - ZKProgressHUD
 
 EXTERNAL SOURCES:
   SEExtensions:
@@ -45,9 +48,10 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alertift: 950483ca193717cc8bb508a7dbbe34f4af321daf
   Kingfisher: 0bf6eae7c2193f15719915fecb7c2c1c03855f3d
-  SEExtensions: 870c198dcb33ad3fcf4e7d07315736ed05757a69
+  SEExtensions: 742ce93cb629c30c3ad070744bd40008d1534ddd
   SwifterSwift: a9e8e144832638c2850b43da5feaf9598c6ad65b
+  ZKProgressHUD: 22fb0679273db1844479bc8c4778f74146e8d129
 
 PODFILE CHECKSUM: 105fa25258da187ed71aec97bcc6f75d61fc25a4
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.9.0
