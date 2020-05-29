@@ -78,7 +78,7 @@ public extension UIView {
         tag = value
         return self
     }
-
+    
     @discardableResult
     func tintColor(_ value: UIColor) -> Self {
         tintColor = value
@@ -92,41 +92,51 @@ public extension UIView {
     }
 }
 
-extension UILabel {
+
+public extension UILabel {
     @discardableResult
-    public func text(_ value: String?) -> Self {
+    func text(_ value: String?) -> Self {
         text = value
         return self
     }
 
     @discardableResult
-    public func color(_ value: UIColor) -> Self {
+    func color(_ value: UIColor) -> Self {
         textColor = value
         return self
     }
 
     @discardableResult
-    public func font(_ value: CGFloat, _ bold: Bool = false) -> Self {
+    func font(_ value: CGFloat, _ bold: Bool = false) -> Self {
         font = bold ? UIFont.boldSystemFont(ofSize: value) : UIFont.systemFont(ofSize: value)
-        /// 8.2 +
-        //        font = UIFont.systemFont(ofSize: value, weight: bold ? .bold : .regular)
         return self
     }
 
     @discardableResult
-    public func numberOfLines(_ value: Int) -> Self {
+    func font(_ value: CGFloat, _ name: UIFont.FontNames) -> Self {
+        font = UIFont(name: name.rawValue, size: value)
+        return self
+    }
+    
+    func fontName(_ value: CGFloat, _ name: String) -> Self {
+        font = UIFont(name: name, size: value)
+        return self
+    }
+    
+    @discardableResult
+    func numberOfLines(_ value: Int = 0) -> Self {
         numberOfLines = value
         return self
     }
 
     @discardableResult
-    public func textAlignment(_ value: NSTextAlignment) -> Self {
+    func textAlignment(_ value: NSTextAlignment) -> Self {
         textAlignment = value
         return self
     }
 
     @discardableResult
-    public func lineBreakMode(_ value: NSLineBreakMode = .byTruncatingTail) -> Self {
+    func lineBreakMode(_ value: NSLineBreakMode = .byTruncatingTail) -> Self {
         lineBreakMode = value
         return self
     }

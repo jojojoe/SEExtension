@@ -31,4 +31,5 @@ Pod::Spec.new do |spec|
   spec.dependency 'Kingfisher'
   spec.dependency 'SwifterSwift'
   spec.dependency 'Alertift'
+  spec.dependency 'ZKProgressHUD'
 end

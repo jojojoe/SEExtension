@@ -39,6 +39,30 @@ public extension UIFont {
     }
 }
 
+
+public extension UIFont {
+    enum FontNames: String {
+        case AvenirNextCondensedDemiBold = "AvenirNextCondensed-DemiBold"
+        case AvenirNextDemiBold = "AvenirNext-DemiBold "
+        case AvenirNextBold = "AvenirNext-Bold"
+        case AvenirHeavy = "Avenir-Heavy"
+        case AvenirMedium = "Avenir-Medium"
+        case GillSans
+        case GillSansSemiBold = "GillSans-SemiBold"
+        case GillSansSemiBoldItalic = "GillSans-SemiBoldItalic"
+        case GillSansBold = "GillSans-Bold"
+        case GillSansBoldItalic = "GillSans-BoldItalic"
+        case MontserratMedium = "Montserrat-Medium"
+        case MontserratSemiBold = "Montserrat-SemiBold"
+        case MontserratBold = "Montserrat-Bold"
+        case MontserratRegular = "Montserrat-Regular"
+    }
+
+    static func custom(_ value: CGFloat, name: FontNames) -> UIFont {
+        return UIFont(name: name.rawValue, size: value) ?? UIFont.systemFont(ofSize: value)
+    }
+}
+
 extension String {
     ///（如果backwards参数设置为true，则返回最后出现的位置）
     func positionOf(sub:String, backwards:Bool = false)->Int {
