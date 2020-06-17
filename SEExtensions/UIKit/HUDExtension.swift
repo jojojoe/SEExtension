@@ -36,7 +36,8 @@ public struct HUD {
     }
     
     public static func progress(_ value: CGFloat?, status: String? = nil) {
-        ZKProgressHUD.showProgress(value, status: status, onlyOnceFont: UIFont.custom(14, name: .MontserratSemiBold))
+        let font = UIFont.init(name: "Montserrat-SemiBold", size: 14) ?? UIFont.systemFont(ofSize: 14)
+        ZKProgressHUD.showProgress(value, status: status, onlyOnceFont: font)
     }
     
 }

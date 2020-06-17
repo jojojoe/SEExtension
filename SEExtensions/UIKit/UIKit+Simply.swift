@@ -112,11 +112,11 @@ public extension UILabel {
         return self
     }
 
-    @discardableResult
-    func font(_ value: CGFloat, _ name: UIFont.FontNames) -> Self {
-        font = UIFont(name: name.rawValue, size: value)
-        return self
-    }
+//    @discardableResult
+//    func font(_ value: CGFloat, _ name: UIFont.FontNames) -> Self {
+//        font = UIFont(name: name.rawValue, size: value)
+//        return self
+//    }
     
     func fontName(_ value: CGFloat, _ name: String) -> Self {
         font = UIFont(name: name, size: value)
