@@ -59,8 +59,11 @@ extension UIColor {
         
     }
     
-    public class func seCustomPatternColor(colorSize: CGSize, patternImg : UIImage, _ position: Int = 1) -> UIColor {
+    public class func seCustomPatternColor
+        (colorSize: CGSize, patternImg : UIImage, _ position: Int = 0) -> UIColor {
         // postion 0:左、上对齐。1:居中对齐。2:右、下对齐
+        
+        
         
         let imageRatio = patternImg.size.width / patternImg.size.height
         let colorSizeRatio = colorSize.width / colorSize.height
@@ -75,31 +78,36 @@ extension UIColor {
         
         if imageRatio > colorSizeRatio {
             // image width > colorSize width
+            
+            let patternImg_M = patternImg.scaled(toHeight: colorSize.height) ?? patternImg
+            
             imageTargetSize.height = colorSize.height
             imageTargetSize.width = imageRatio * (colorSize.height)
             if position == 0 {
                 let originalX: CGFloat = 0
-                patternImg.draw(in: CGRect(x: originalX, y: 0, width: imageTargetSize.width, height: imageTargetSize.height))
+                patternImg_M.draw(in: CGRect(x: originalX, y: 0, width: imageTargetSize.width, height: imageTargetSize.height))
             } else if position == 1 {
                 let originalX: CGFloat = -((imageTargetSize.width - colorSize.width) / 2)
-                patternImg.draw(in: CGRect(x: originalX, y: 0, width: imageTargetSize.width, height: imageTargetSize.height))
+                patternImg_M.draw(in: CGRect(x: originalX, y: 0, width: imageTargetSize.width, height: imageTargetSize.height))
             } else if position == 2 {
                 let originalX: CGFloat = -(imageTargetSize.width - colorSize.width)
-                patternImg.draw(in: CGRect(x: originalX, y: 0, width: imageTargetSize.width, height: imageTargetSize.height))
+                patternImg_M.draw(in: CGRect(x: originalX, y: 0, width: imageTargetSize.width, height: imageTargetSize.height))
             }
         } else {
-            // colorSize width
+            // image width < colorSize width
+            let patternImg_M = patternImg.scaled(toWidth: colorSize.height) ?? patternImg
+            
             imageTargetSize.width = colorSize.width
             imageTargetSize.height = colorSize.width / imageRatio
             if position == 0 {
                 let originalY: CGFloat = 0
-                patternImg.draw(in: CGRect(x: 0, y: originalY, width: imageTargetSize.width, height: imageTargetSize.height))
+                patternImg_M.draw(in: CGRect(x: 0, y: originalY, width: imageTargetSize.width, height: imageTargetSize.height))
             } else if position == 1 {
                 let originalY: CGFloat = -((imageTargetSize.height - colorSize.height) / 2)
-                patternImg.draw(in: CGRect(x: 0, y: originalY, width: imageTargetSize.width, height: imageTargetSize.height))
+                patternImg_M.draw(in: CGRect(x: 0, y: originalY, width: imageTargetSize.width, height: imageTargetSize.height))
             } else if position == 2 {
                 let originalY: CGFloat = -(imageTargetSize.height - colorSize.height)
-                patternImg.draw(in: CGRect(x: 0, y: originalY, width: imageTargetSize.width, height: imageTargetSize.height))
+                patternImg_M.draw(in: CGRect(x: 0, y: originalY, width: imageTargetSize.width, height: imageTargetSize.height))
             }
         }
         
@@ -175,7 +183,7 @@ extension UIColor {
         
     }
     
-    public class func seCustomPatternColorImage(colorSize: CGSize, patternImg : UIImage, _ position: Int = 1) -> UIImage? {
+    public class func seCustomPatternColorImage(colorSize: CGSize, patternImg : UIImage, _ position: Int = 0) -> UIImage? {
         // postion 0:左、上对齐。1:居中对齐。2:右、下对齐
         
         let imageRatio = patternImg.size.width / patternImg.size.height
@@ -191,31 +199,35 @@ extension UIColor {
         
         if imageRatio > colorSizeRatio {
             // image width > colorSize width
+            let patternImg_M = patternImg.scaled(toHeight: colorSize.height) ?? patternImg
+            
             imageTargetSize.height = colorSize.height
             imageTargetSize.width = imageRatio * (colorSize.height)
             if position == 0 {
                 let originalX: CGFloat = 0
-                patternImg.draw(in: CGRect(x: originalX, y: 0, width: imageTargetSize.width, height: imageTargetSize.height))
+                patternImg_M.draw(in: CGRect(x: originalX, y: 0, width: imageTargetSize.width, height: imageTargetSize.height))
             } else if position == 1 {
                 let originalX: CGFloat = -((imageTargetSize.width - colorSize.width) / 2)
-                patternImg.draw(in: CGRect(x: originalX, y: 0, width: imageTargetSize.width, height: imageTargetSize.height))
+                patternImg_M.draw(in: CGRect(x: originalX, y: 0, width: imageTargetSize.width, height: imageTargetSize.height))
             } else if position == 2 {
                 let originalX: CGFloat = -(imageTargetSize.width - colorSize.width)
-                patternImg.draw(in: CGRect(x: originalX, y: 0, width: imageTargetSize.width, height: imageTargetSize.height))
+                patternImg_M.draw(in: CGRect(x: originalX, y: 0, width: imageTargetSize.width, height: imageTargetSize.height))
             }
         } else {
             // colorSize width
+            let patternImg_M = patternImg.scaled(toWidth: colorSize.height) ?? patternImg
+            
             imageTargetSize.width = colorSize.width
             imageTargetSize.height = colorSize.width / imageRatio
             if position == 0 {
                 let originalY: CGFloat = 0
-                patternImg.draw(in: CGRect(x: 0, y: originalY, width: imageTargetSize.width, height: imageTargetSize.height))
+                patternImg_M.draw(in: CGRect(x: 0, y: originalY, width: imageTargetSize.width, height: imageTargetSize.height))
             } else if position == 1 {
                 let originalY: CGFloat = -((imageTargetSize.height - colorSize.height) / 2)
-                patternImg.draw(in: CGRect(x: 0, y: originalY, width: imageTargetSize.width, height: imageTargetSize.height))
+                patternImg_M.draw(in: CGRect(x: 0, y: originalY, width: imageTargetSize.width, height: imageTargetSize.height))
             } else if position == 2 {
                 let originalY: CGFloat = -(imageTargetSize.height - colorSize.height)
-                patternImg.draw(in: CGRect(x: 0, y: originalY, width: imageTargetSize.width, height: imageTargetSize.height))
+                patternImg_M.draw(in: CGRect(x: 0, y: originalY, width: imageTargetSize.width, height: imageTargetSize.height))
             }
         }
         
